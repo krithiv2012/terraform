@@ -1,11 +1,11 @@
-variable "AMIS" {
-    type = string
+variable "AWS_REGION" {
+    type = map(string)
     default = {
-     "us-east1" = "ami-0bcc094591f354be2"
+    "us-east-1" = "ami-0bcc094591f354be2"
     }
 }
 
-variable "AWS_REGION" {
+variable "AMIS" {
     type = string
 }
 
